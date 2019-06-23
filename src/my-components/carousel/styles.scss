@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  position: relative;
+}
+.active {
+  // cursor: grabbing;
+  transform: scale(1);
+}
+.slides {
+  //   width: 300px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  margin: 1em;
+  cursor: pointer;
+  // width: 300px;
+  // height: 300px;
+  // position: relative;
+  // img {
+  //   position: absolute;
+  //   overflow: hidden;
+  // }
+  &:hover {
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  }
+}
+.image {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+  img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+}
+.wrapper {
+  position: relative;
+}
+.caption {
+  height: auto;
+  width: 300px;
+}
+.prev {
+  position: absolute;
+  left: 3%;
+  top: 40%;
+}
+.next {
+  position: absolute;
+  right: 3%;
+  top: 40%;
+}
+.common-styles {
+  border: 1px solid #dfe1e5;
+  padding: 30px;
+  color: #757575;
+  background-color: #fff;
+  opacity: 0.5;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 5;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+  &:hover {
+    opacity: 1;
+  }
+}
