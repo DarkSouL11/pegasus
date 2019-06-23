@@ -116,7 +116,7 @@ function App() {
   return (
     <div className="App">
       {/* <Greet data={dropdownComponent} /> */}
-      <Dropdown data={mld} />
+      <Dropdown title="Dropdown With label content" data={mld} />
       {/* <Carousel data={carouselData} /> */}
     </div>
   );

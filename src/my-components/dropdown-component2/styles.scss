@@ -1,0 +1,52 @@
+$btn-color: #757575;
+
+.btn {
+  display: inline-flex;
+  padding: 10px;
+  background-color: $btn-color;
+  width: 150px;
+
+  &:hover {
+    background-color: lighten($btn-color, 5);
+  }
+}
+
+.dropdown {
+  position: relative;
+
+  .dropdown-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  &.is-submenu {
+    .dropdown-trigger {
+      background-color: $btn-color;
+
+      &:hover {
+        background-color: lighten($btn-color, 5);
+      }
+    }
+
+    .dropdown-list {
+      top: 0;
+      left: 100%;
+    }
+  }
+
+  &:hover {
+    & > .dropdown-list {
+      display: block;
+    }
+  }
+}
+
+.dropdown-trigger {
+  background-color: green;
+
+  &:hover {
+    background-color: lighten(green, 5);
+  }
+}
